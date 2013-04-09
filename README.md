@@ -87,9 +87,9 @@ start liteide/bin/liteide.exe
 
 
 如果需要编译于C,C++相关的代码，如数据库驱动，则需要mingw,msys（要这个是因为有git和一些命令行工具）。　下载他们放入以下目录
-> mingw32放入“%DEVROOT%\mingwxx\mingw32” 
-> mingw64放入“%DEVROOT%\mingwxx\mingw64” 
-> msys放入“%DEVROOT%\mingwxx\msys” 
+* mingw32放入“%DEVROOT%\mingwxx\mingw32” 
+* mingw64放入“%DEVROOT%\mingwxx\mingw64” 
+* msys放入“%DEVROOT%\mingwxx\msys” 
 
 
 配置LiteIDE下的win32编译环境变量：
@@ -202,7 +202,10 @@ go get github.com/mattn/go-oci8
 #cgo windows CFLAGS: -IL:/msdotnet/instantclient_11_2/sdk/include/
 ```
 这两行也可以写在LiteIDE的配置文件中，你可以参考前面的说明。
+至此，你可以编译win32的驱动了
 
+＃　后记
+本文是作为笔记记录的，很杂乱，可能有很多谬误，如果有什么指正可告知我，顶部有我的邮件地址，但是不能保证及时回复。
 
 
 

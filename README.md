@@ -87,9 +87,9 @@ start liteide/bin/liteide.exe
 
 
 如果需要编译于C,C++相关的代码，如数据库驱动，则需要mingw,msys（要这个是因为有git和一些命令行工具）。　下载他们放入以下目录
-> mingw32放入“%DEVROOT%\mingwxx\mingw32”
-> mingw64放入“%DEVROOT%\mingwxx\mingw64”
-> msys放入“%DEVROOT%\mingwxx\msys”
+> mingw32放入“%DEVROOT%\mingwxx\mingw32” 
+> mingw64放入“%DEVROOT%\mingwxx\mingw64” 
+> msys放入“%DEVROOT%\mingwxx\msys” 
 
 
 配置LiteIDE下的win32编译环境变量：

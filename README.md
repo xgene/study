@@ -121,7 +121,7 @@ CGO_CFLAGS=-I%MINGW%/include
 CGO_LDFLAGS=-L%MINGW%/lib
 ```
 
-可以看到上面的DEVROOT被注释掉了，所以需要用**start\_liteide.cmd**脚本启动LiteIDE。
+可以看到上面的DEVROOT被注释掉了，所以需要用 **start\_liteide.cmd** 脚本启动LiteIDE。
 
 配置LiteIDE下的win64编译环境变量：
 
@@ -189,7 +189,7 @@ set MSYS=%DEVROOT%/mingwxx/msys
 set PATH=%GOROOT%/bin;%DEVROOT%/liteide/bin;%MINGW%/bin;%MSYS%/bin;%PATH%
 set GOPATH=E:/KDISK/3-APPSRC/9-GO/workspace
 ```
-其中GOPATH是你下载代码的本地存放处，**在LiteIDE中你也要配置“自定义GOPATH”**,msys中有git,所以用一下命令来获取代码：
+其中GOPATH是你下载代码的本地存放处， **在LiteIDE中你也要配置“自定义GOPATH”** ,msys中有git,所以用一下命令来获取代码：
 ```dos
 go get github.com/mattn/go-oci8
 

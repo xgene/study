@@ -65,10 +65,10 @@ GOTO OVER
 ```
 
 本机是64位WIN7,如果需要
-能编译在XP上运行的程序执行 buildpkg windows 386
-能编译在ARM CPU上运行的程序执行 buildpkg linux arm
-能编译在32 LINUX上运行的程序执行 buildpkg linux 386
-能编译在64 LINUX上运行的程序执行 buildpkg linux amd64
+* 能编译在XP上运行的程序执行 buildpkg windows 386
+* 能编译在ARM CPU上运行的程序执行 buildpkg linux arm
+* 能编译在32 LINUX上运行的程序执行 buildpkg linux 386
+* 能编译在64 LINUX上运行的程序执行 buildpkg linux amd64
 
 **至此应该可以编译几个平台的程序了**
 

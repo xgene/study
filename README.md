@@ -18,7 +18,7 @@ my email: boyseeyou at gmail.com
 start set PATH=L:\golangdev\go\bin;%PATH%
 ```
 
-执行脚本start.cmd,出现命令窗口，执行脚本：**all.bat**,因为本人的操作系统为64位win7,而下载的也是“windows-amd64”，可以不需要执行此步，执行之后只会将原有的程序覆盖。
+执行脚本start.cmd,出现命令窗口，执行脚本：all.bat,因为本人的操作系统为64位win7,而下载的也是“windows-amd64”，可以不需要执行此步，执行之后只会将原有的程序覆盖。
 
 --------------------------
 ## 编译各平台的编译器和连接器([本节参考于此处](https://code.google.com/p/go-wiki/wiki/WindowsCrossCompiling))

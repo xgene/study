@@ -31,7 +31,7 @@ start set PATH=L:\golangdev\go\bin;%PATH%
 FOR %%A IN (8 6 5) DO FOR %%C IN (a c g l) DO go tool dist install -v cmd/%%A%%C
 ```
 
-执行脚本start.cmd开启命令窗口，执行脚本：buildcmd.cmd
+执行脚本start.cmd开启命令窗口，执行脚本：buildcmd.cmd （此处编译可能需要MINGW，我的PATH中有相关路劲，所以没在意需不需要）
 
 ---------------------------
 ## 生成各平台的标准命令工具和库

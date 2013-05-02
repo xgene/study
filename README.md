@@ -18,7 +18,7 @@ my email: boyseeyou at gmail.com
 start set PATH=L:\golangdev\go\bin;%PATH%
 ```
 
-执行脚本start.cmd,出现命令窗口，执行脚本：all.bat,因为本人的操作系统为64位win7,而下载的也是“windows-amd64”，可以不需要执行此步，执行之后只会将原有的程序覆盖。
+执行脚本start.cmd,出现命令窗口，执行脚本：all.bat,另外PATH中应该有GCC编译环境,我加入了MINGW。
 
 --------------------------
 ## 编译各平台的编译器和连接器([本节参考于此处](https://code.google.com/p/go-wiki/wiki/WindowsCrossCompiling))
@@ -31,11 +31,11 @@ start set PATH=L:\golangdev\go\bin;%PATH%
 FOR %%A IN (8 6 5) DO FOR %%C IN (a c g l) DO go tool dist install -v cmd/%%A%%C
 ```
 
-执行脚本start.cmd开启命令窗口，执行脚本：buildcmd.cmd （此处编译可能需要MINGW，我的PATH中有相关路劲，所以没在意需不需要）
+执行脚本start.cmd开启命令窗口，执行脚本：buildcmd.cmd 
 
 ---------------------------
 ## 生成各平台的标准命令工具和库
-在“%DEVROOT%/go/src”中建立脚本buildcmd.cmd,内容如下：
+在“%DEVROOT%/go/src”中建立脚本buildpkg.cmd,内容如下：
 
 ```dos
 ::此脚本名: buildpkg.cmd

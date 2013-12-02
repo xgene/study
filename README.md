@@ -14,7 +14,7 @@ my email: boyseeyou at gmail.com
 在“%DEVROOT%/go/src”中建立脚本start.cmd,内容如下：
 
 ```dos
-:: 本人习惯用次脚本开启命令行
+:: 本人习惯用脚本开启命令行
 start set PATH=L:\golangdev\go\bin;%PATH%
 ```
 

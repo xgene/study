@@ -77,7 +77,7 @@ GOTO OVER
 
 -----------------------------
 ## 配置LiteIDE
-关于LiteIDE,你可以在此处[下载](https://code.google.com/p/golangide/downloads/list)，下载后将其解压在“%DEVROOT%/liteide”目录下，与go目录同级。
+关于LiteIDE,你可以在此处[下载](http://sourceforge.net/projects/liteide/files/)，下载后将其解压在“%DEVROOT%/liteide”目录下，与go目录同级。
 在“%DEVROOT%”中建立脚本start\_liteide.cmd,内容如下：
 
 ```dos

@@ -7,7 +7,7 @@ my email: boyseeyou at gmail.com
 ------------------------------
 
 ## 下载go源码　
-本例以go1.1beta2为例,你可以在此处下载[go源码](https://code.google.com/p/go/downloads/list)，我下载的是“go1.1beta2.windows-amd64.zip”，下载完后解压到目录“L:\golangdev\go”（因为本人的go开发环境放在移动硬盘上,所以不是一般建议的放在“C:\go”）。为了在后面的段落中便于描述，我将设置环境变量“set DEVROOT=L:/golangdev”,便于后面引用。
+本例以go1.1beta2为例,你可以在此处下载[go源码](http://www.golangtc.com/download)，我下载的是“go1.1beta2.windows-amd64.zip”，下载完后解压到目录“L:\golangdev\go”（因为本人的go开发环境放在移动硬盘上,所以不是一般建议的放在“C:\go”）。为了在后面的段落中便于描述，我将设置环境变量“set DEVROOT=L:/golangdev”,便于后面引用。
 
 ------------------------------
 ## 编译本机系统go编译环境([本节参考于此处](https://code.google.com/p/go-wiki/wiki/WindowsCrossCompiling))

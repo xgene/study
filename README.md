@@ -1,6 +1,6 @@
 my email: boyseeyou at gmail.com
 
-64位WIN7中golang交叉编译环境(本文只适用于1.1-1.4)
+64位WIN7中golang交叉编译环境(适用于go1.1-1.4, go1.5请看文末)
 ================================================
 
 # 准备交叉编译环境
@@ -206,6 +206,41 @@ go get github.com/mattn/go-oci8
 这两行也可以写在LiteIDE的配置文件中，你可以参考前面的说明。
 至此，你可以编译win32的驱动了
 
+#编译GO1.5
+先将go1.4复制到C:\Users\Administrator\go1.4,在go/src下建立buildgo15bygo14.cmd,内容如下
+```dos
+set DEVROOT=%~d0/alllangdev
+set GOHOME=%DEVROOT%/golangdev
+set GOROOT=%GOHOME%/go
+set GOBIN=%GOROOT%/bin
+set MINGW=%DEVROOT%/tools/mingw_gcc492/mingw64
+set MSYS=%DEVROOT%/tools/msys
+set CYGWIN=%DEVROOT%/tools/cygwin64
+set PATH=%GOROOT%/bin;%GOHOME%/liteide/bin;%MINGW%/bin;%MSYS%/bin;%CYGWIN%/bin;%PATH%
+ 
+
+
+::GOOS    GOARCH
+::windows 386
+::linux arm
+::linux 386
+::linux amd64
+
+SET GOOS=windows
+SET GOARCH=386
+call make.bat --no-clean --no-local
+
+SET GOOS=linux
+
+SET GOARCH=386
+call make.bat --no-clean --no-local
+SET GOARCH=arm
+call make.bat --no-clean --no-local
+SET GOARCH=amd64
+call make.bat --no-clean --no-local
+
+```
+最后执行它吧.
 # 后记
 **本文是作为笔记记录的，很杂乱，可能有很多谬误，如果有什么指正可告知我，顶部有我的邮件地址，但是不能保证及时回复。**
 

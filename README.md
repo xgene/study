@@ -240,7 +240,7 @@ SET GOARCH=amd64
 call make.bat --no-clean --no-local
 
 ```
-最后执行它吧.
+最后执行buildgo15bygo14.cmd吧.
 # 后记
 **本文是作为笔记记录的，很杂乱，可能有很多谬误，如果有什么指正可告知我，顶部有我的邮件地址，但是不能保证及时回复。**
 

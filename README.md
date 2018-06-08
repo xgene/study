@@ -10,7 +10,7 @@ my email: boyseeyou at 163.com
 本例以go1.1beta2为例,你可以在此处下载[go源码](http://www.golangtc.com/download)，我下载的是“go1.1beta2.windows-amd64.zip”，下载完后解压到目录“L:\golangdev\go”（因为本人的go开发环境放在移动硬盘上,所以不是一般建议的放在“C:\go”）。为了在后面的段落中便于描述，我将设置环境变量“set DEVROOT=L:/golangdev”,便于后面引用。
 
 ------------------------------
-## 编译本机系统go编译环境([本节参考于此处](https://code.google.com/p/go-wiki/wiki/WindowsCrossCompiling))
+## 编译本机系统go编译环境
 在“%DEVROOT%/go/src”中建立脚本start.cmd,内容如下：
 
 ```dos
@@ -21,7 +21,7 @@ start set PATH=L:\golangdev\go\bin;%PATH%
 执行脚本start.cmd,出现命令窗口，执行脚本：all.bat,另外PATH中应该有GCC编译环境,我加入了MINGW。
 
 --------------------------
-## 编译各平台的编译器和连接器([本节参考于此处](https://code.google.com/p/go-wiki/wiki/WindowsCrossCompiling))
+## 编译各平台的编译器和连接器
 在“%DEVROOT%/go/src”中建立脚本buildcmd.cmd,内容如下：
 
 ```dos

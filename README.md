@@ -1,4 +1,4 @@
-my email: boyseeyou at gmail.com
+my email: boyseeyou at 163.com
 
 64位WIN7中golang交叉编译环境(适用于go1.1-1.4, go1.5请看文末)
 ================================================
@@ -241,6 +241,14 @@ call make.bat --no-clean --no-local
 
 ```
 最后执行buildgo15bygo14.cmd吧.
+
+## 包管理
+建议使用[glide](https://github.com/Masterminds/glide),构建过的最好的包管理工具。
+解决包路径与git库路径不一致的问题,示例如下
+```
+- package: golang.org/x/sys
+  repo: https://github.com/golang/sys.git
+```
 # 后记
 **本文是作为笔记记录的，很杂乱，可能有很多谬误，如果有什么指正可告知我，顶部有我的邮件地址，但是不能保证及时回复。**
 

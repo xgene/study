@@ -243,7 +243,7 @@ call make.bat --no-clean --no-local
 最后执行buildgo15bygo14.cmd吧.
 
 ## 包管理
-建议使用[glide](https://github.com/Masterminds/glide),构建过的最好的包管理工具。
+建议使用[glide](https://github.com/Masterminds/glide),我见过的最好的包管理工具。
 解决包路径与git库路径不一致的问题,示例如下
 ```
 - package: golang.org/x/sys

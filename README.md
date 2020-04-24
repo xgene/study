@@ -242,7 +242,7 @@ call make.bat --no-clean --no-local
 ```
 最后执行buildgo15bygo14.cmd吧.
 
-## 包管理
+## 包管理(go1.14之后用go mod，已经很好用了)
 建议使用[glide](https://github.com/Masterminds/glide),我见过的最好的包管理工具。可以学习这两篇文章[《Golang依赖管理工具：glide从入门到精通使用》](https://studygolang.com/articles/10453?fr=email)[《Golang包管理工具Glide，你值得拥有》](https://blog.csdn.net/chenqijing2/article/details/55050843)
 解决包路径与git库路径不一致的问题,示例如下
 ```
